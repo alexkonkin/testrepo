@@ -1,7 +1,7 @@
 class testrepo {
      $wikimetanamespace = hiera('mediawiki::wikimetanamespace')
      $wikisitename      = hiera('mediawiki::wikisitename')
-
+     $environment = hiera('testrepo::environment')
 
      if $environment == 'production' {
          notify { 'default-message' :
