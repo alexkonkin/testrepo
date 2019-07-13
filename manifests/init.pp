@@ -16,7 +16,7 @@ class testrepo {
     file { 'LocalSettings.php':
        path    => '/tmp/LocalSettings.php',
        ensure  => 'file',
-       content => template('mediawiki/LocalSettings.erb'),
+       content => template('testrepo/LocalSettings.erb'),
     }
 
 }
