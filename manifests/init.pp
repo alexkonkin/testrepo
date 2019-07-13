@@ -3,7 +3,7 @@ class testrepo {
           message => "this is the productioin environment"
      } else {
           notify { 'default-message' :
-               message => "This is not a production environment"
+               message => "This is not a production environment "
           }
      }
 }
